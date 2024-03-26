@@ -27,9 +27,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
 
     USERNAME_FIELD = "username"
-    REQUIRED_FIELDS = ['email']
+    REQUIRED_FIELDS = ['email'] # 限定 create需要 REQUIRED FIELDS
 
-    
 
     objects = CustomUserManager()
 
